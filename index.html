@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PixelCraft CSS Playground — creative Flexbox, Grid and animation experiments.">
+    <title>PixelCraft | CSS Playground</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="topbar">
+    <nav class="nav container">
+        <a href="#home" class="logo"><span class="logo-mark">P</span> pixelcraft<span class="dot">.</span></a>
+        <div class="nav-links">
+            <a href="#flexbox">Flexbox</a>
+            <a href="#grid">Grid Lab</a>
+            <a href="#motion">Motion</a>
+        </div>
+        <a href="#grid" class="nav-button">Explore Lab <span>↗</span></a>
+    </nav>
+</header>
+
+<main>
+    <section class="hero container" id="home">
+        <div class="hero-copy">
+            <div class="status"><span></span> WEEK 01 / CSS EXPERIMENTS</div>
+            <h1>Make the web<br>feel <span class="gradient-text">alive.</span></h1>
+            <p class="hero-description">
+                A creative playground exploring flexible layouts, responsive
+                grids, and motion that makes every interaction feel intentional.
+            </p>
+            <div class="hero-buttons">
+                <a href="#flexbox" class="btn btn-primary">Explore the playground ↘</a>
+                <a href="#grid" class="btn btn-outline">View the grid</a>
+            </div>
+            <div class="hero-meta">
+                <span>✳ HTML5</span>
+                <span>▦ CSS3</span>
+                <span>↗ JavaScript</span>
+            </div>
+        </div>
+
+        <div class="hero-art" aria-label="Decorative CSS shapes">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="art-card">
+                <div class="art-top"><span>●</span><span>●</span><span>●</span><small>layout.css</small></div>
+                <div class="art-code">
+                    <p><i>.creative-layout</i> {</p>
+                    <p class="indent">display: <b>grid</b>;</p>
+                    <p class="indent">gap: <em>24px</em>;</p>
+                    <p class="indent">place-items: center;</p>
+                    <p>}</p>
+                    <br>
+                    <p><i>@media</i> (max-width: 768px) {</p>
+                    <p class="indent">flex-direction: column;</p>
+                    <p>}</p>
+                </div>
+                <div class="art-bottom"><span>● SYSTEM ONLINE</span><span>v1.0</span></div>
+            </div>
+            <div class="floating-tag tag-top">✦ Creative layouts</div>
+            <div class="floating-tag tag-bottom">↗ Motion enabled</div>
+        </div>
+    </section>
+
+    <section class="section container" id="flexbox">
+        <div class="section-top">
+            <div>
+                <p class="eyebrow">01 — FLEXBOX</p>
+                <h2>Ideas in alignment<span class="dot">.</span></h2>
+                <p class="section-description">Three cards. One flexible row. Infinite possibilities.</p>
+            </div>
+            <span class="section-number">01 / 03</span>
+        </div>
+
+        <div class="flex-cards">
+            <article class="skill-card">
+                <div class="card-top"><span class="number">01</span><span class="symbol purple">↔</span></div>
+                <div class="card-illustration illustration-purple"><span>←</span><span class="middle-block"></span><span>→</span></div>
+                <p class="card-label">LAYOUT SYSTEM</p>
+                <h3>Flex your layout</h3>
+                <p>Align, distribute, and space elements without fighting your design.</p>
+                <a href="#grid" class="card-link">Discover more <span>↗</span></a>
+            </article>
+
+            <article class="skill-card featured">
+                <div class="card-top"><span class="number">02</span><span class="symbol mint">✳</span></div>
+                <div class="card-illustration illustration-mint"><span class="mini-square"></span><span class="big-square"></span><span class="mini-square"></span></div>
+                <p class="card-label">RESPONSIVE THINKING</p>
+                <h3>Built to adapt</h3>
+                <p>Make components work beautifully on desktops, tablets, and phones.</p>
+                <a href="#grid" class="card-link">Discover more <span>↗</span></a>
+            </article>
+
+            <article class="skill-card">
+                <div class="card-top"><span class="number">03</span><span class="symbol orange">✧</span></div>
+                <div class="card-illustration illustration-orange"><span class="sparkle">✳</span><span class="sparkle small">✦</span></div>
+                <p class="card-label">INTERACTION DESIGN</p>
+                <h3>Make it respond</h3>
+                <p>Use subtle transitions and hover states to add personality.</p>
+                <a href="#motion" class="card-link">Discover more <span>↗</span></a>
+            </article>
+        </div>
+        <p class="tech-note"><span>✓</span> Using <code>display: flex</code>, <code>gap</code>, <code>align-items</code> and <code>justify-content</code>.</p>
+    </section>
+
+    <section class="section grid-section" id="grid">
+        <div class="container">
+            <div class="section-top">
+                <div>
+                    <p class="eyebrow">02 — CSS GRID</p>
+                    <h2>The bento experiment<span class="dot">.</span></h2>
+                    <p class="section-description">A six-piece collection of ideas, organized with CSS Grid.</p>
+                </div>
+                <span class="section-number">02 / 03</span>
+            </div>
+
+            <div class="bento-grid">
+                <article class="bento-item bento-large">
+                    <div class="bento-art art-type"><span>Ag</span><span>Aa</span><span>01</span></div>
+                    <div><p class="card-label">01 / VISUAL LANGUAGE</p><h3>Design with intention.</h3><p>Typography, contrast, and rhythm create a memorable experience.</p></div>
+                    <span class="bento-arrow">↗</span>
+                </article>
+
+                <article class="bento-item bento-violet">
+                    <p class="card-label">02 / STRUCTURE</p>
+                    <div class="grid-symbol">▦</div>
+                    <h3>Think in grids.</h3>
+                    <p>Rows and columns bring clarity to complex layouts.</p>
+                </article>
+
+                <article class="bento-item bento-mint">
+                    <p class="card-label">03 / RESPONSIVE</p>
+                    <div class="responsive-symbol"><span></span><span></span><span></span></div>
+                    <h3>Every screen counts.</h3>
+                    <p>Adapt your design to the space available.</p>
+                </article>
+
+                <article class="bento-item bento-orange">
+                    <p class="card-label">04 / MOTION</p>
+                    <div class="motion-symbol">↗</div>
+                    <h3>Movement with meaning.</h3>
+                    <p>Guide attention without distracting the user.</p>
+                </article>
+
+                <article class="bento-item bento-dark">
+                    <p class="card-label">05 / CLEAN CODE</p>
+                    <div class="code-symbol">{ }</div>
+                    <h3>Simple is powerful.</h3>
+                    <p>Reusable classes make CSS easier to maintain.</p>
+                </article>
+
+                <article class="bento-item bento-pink">
+                    <p class="card-label">06 / QUALITY</p>
+                    <div class="quality-symbol">✓</div>
+                    <h3>Polish every detail.</h3>
+                    <p>Test alignment, spacing, and interactions.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container" id="motion">
+        <div class="section-top">
+            <div>
+                <p class="eyebrow">03 — ANIMATION LAB</p>
+                <h2>Motion, not noise<span class="dot">.</span></h2>
+                <p class="section-description">Small interactions that give the interface a little life.</p>
+            </div>
+            <span class="section-number">03 / 03</span>
+        </div>
+
+        <div class="motion-grid">
+            <article class="motion-card">
+                <span class="motion-index">DEMO 01</span>
+                <div class="demo-icon">↗</div>
+                <h3>Button magic</h3>
+                <p>Hover over the button or click it to test the interaction.</p>
+                <button type="button" class="btn btn-primary magic-button" id="magic-button">Activate effect ↗</button>
+                <p id="button-message" class="button-message" aria-live="polite"></p>
+            </article>
+
+            <article class="motion-card lift-demo">
+                <span class="motion-index">DEMO 02</span>
+                <div class="demo-icon">✧</div>
+                <h3>The little lift</h3>
+                <p>Move your pointer over this card. Notice the movement and shadow.</p>
+                <div class="demo-track"><span>HOVER TO EXPLORE</span><span>↗</span></div>
+            </article>
+
+            <article class="motion-card">
+                <span class="motion-index">DEMO 03</span>
+                <div class="demo-icon">◌</div>
+                <h3>Infinite loop</h3>
+                <p>A lightweight spinner powered by CSS keyframes.</p>
+                <div class="loader-row"><span class="loader"></span><span>Animation running</span></div>
+            </article>
+        </div>
+    </section>
+
+    <section class="closing">
+        <div class="container closing-inner">
+            <div><p class="eyebrow">THE EXPERIMENT CONTINUES</p><h2>Keep creating. Keep improving.</h2><p>Great interfaces are built one thoughtful detail at a time.</p></div>
+            <a href="#home" class="btn btn-light">Back to top ↑</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <a href="#home" class="logo">pixelcraft<span class="dot">.</span></a>
+        <p>WeIntern · Week 1 · Task 3</p>
+        <p>© <span id="year"></span> PixelCraft Playground</p>
+    </div>
+</footer>
+
+</body>
+</html>
